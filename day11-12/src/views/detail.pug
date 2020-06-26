@@ -1,0 +1,10 @@
+extends index
+include mixins/movieBlock
+
+block content
+    h1 #{pageTitle}
+    p #{summary}
+    ul
+        each genre in genres
+            li
+                span #{genre}
