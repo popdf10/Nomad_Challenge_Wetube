@@ -1,0 +1,7 @@
+extends layouts/main
+
+block content
+    .movies
+        each movie in movies
+            a(href=routes.movieDetail)
+                h1=movie.title

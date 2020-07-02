@@ -7,10 +7,40 @@ SO YOU CAN SEARCH / ADD / EDIT / DELETE YOUR DOCUMENTS ONLY.
 PLEASE FOLLOW THIS STEP
 WE NEED TO SHARE THE SAME DB SO NICO CAN CHECK OUT EVERYBODYS PROJECT.
 */
-const YOUR_USERNAME = null;
+const YOUR_USERNAME = "popdf10";
 
 const MovieSchema = mongoose.Schema({
-  // HERE YOU HAVE TO CREATE AND COMPLETE THE MOVIE SCHEMA
+  id: {
+    type: Number,
+    required: "ID is required",
+  },
+  title: {
+    type: String,
+    required: "Title is required",
+  },
+  year: {
+    type: Number,
+    required: "Year is required",
+  },
+  rating: {
+    type: Number,
+    required: "Rating is required",
+  },
+  synopsis: {
+    type: String,
+    required: "Synopsis is required",
+  },
+  genres: [
+    {
+      type: String,
+      required: "Genres is required",
+    },
+  ],
+  uploadedAt: {
+    type: Date,
+    default: Date.now,
+    required: "Uploaded At is required",
+  },
 });
 
 if (YOUR_USERNAME === null || typeof YOUR_USERNAME !== "string") {
