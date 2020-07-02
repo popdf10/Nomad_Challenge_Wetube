@@ -10,10 +10,6 @@ WE NEED TO SHARE THE SAME DB SO NICO CAN CHECK OUT EVERYBODYS PROJECT.
 const YOUR_USERNAME = "popdf10";
 
 const MovieSchema = mongoose.Schema({
-  id: {
-    type: Number,
-    required: "ID is required",
-  },
   title: {
     type: String,
     required: "Title is required",
@@ -39,7 +35,6 @@ const MovieSchema = mongoose.Schema({
   uploadedAt: {
     type: Date,
     default: Date.now,
-    required: "Uploaded At is required",
   },
 });
 

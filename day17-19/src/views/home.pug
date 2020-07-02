@@ -3,5 +3,5 @@ extends layouts/main
 block content
     .movies
         each movie in movies
-            a(href=routes.movieDetail)
+            a(href=routes.movieDetail(movie.id))
                 h1=movie.title

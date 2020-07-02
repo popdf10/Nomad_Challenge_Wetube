@@ -8,7 +8,13 @@ const SEARCH = "/search";
 const routes = {
   home: HOME,
   create: CREATE,
-  movieDetail: MOVIE_DETAIL,
+  movieDetail: (id) => {
+    if (id) {
+      return `/${id}`;
+    } else {
+      return MOVIE_DETAIL;
+    }
+  },
   editMovie: (id) => {
     if (id) {
       return `/${id}/edit`;
