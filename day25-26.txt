@@ -1,0 +1,22 @@
+Is It Down?
+오늘의 강의: 복습
+그러나 차주 챌린지를 위해 미리 챕터 6, 7를 시청하실 것을 추천합니다. 차주는 챕터 8부터 시작합니다.
+오늘의 과제: 아래 코딩 챌린지를 완료하세요.
+제출기간: 2일 챌린지 입니다. 토요일 오전 6시까지
+Challenge goals
+Build a simple API that I can use to check if a website is down.
+With the provided blueprint, make an app that has this exact output:
+
+When I go to the URL /?url=nomadcoders.co, check if the 'url' query CONTAINS http and if it does not, add it.
+Using request make a GET request to the website and if the response.statusCode is less or equals than 445 return a "Up!"
+If the website is down, return a JSON "Down!"
+The app must behave exactly like the video
+Reference Links
+request(https://www.npmjs.com/package/request #super-simple-to-use )
+HTTP Status Code
+(https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
+제출방법
+코딩 챌린지는 CodeSandbox 라는 툴을 이용하여 제출합니다.
+제출기간: 48시간! 토요일 오전 6시까지
+오늘의 CodeSandbox 템플릿: Boilerplate
+오늘의 코딩 챌린지는 어떠했나요? 후기. 건의사항 남겨주세요
